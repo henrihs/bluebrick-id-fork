@@ -1,0 +1,22 @@
+
+
+*.bak
+*.suo
+*.orig
+*.log
+*.chm
+
+# specific directories
+ResxEditor/*
+trash/*
+map de test/*
+BlueBrick/obj/*
+BlueBrick/bin/Debug/*
+BlueBrick/bin/Release/old version
+BlueBrick/bin/Release/part to integrate
+
+# specific files
+BlueBrick/BlueBrick.csproj.user
+BlueBrick/bin/Release/BlueBrick*
+BlueBrick.resources.dll
+BlueBrick.userprefs

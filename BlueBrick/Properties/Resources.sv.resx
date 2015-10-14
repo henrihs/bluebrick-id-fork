@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActionAddArea" xml:space="preserve">
+    <value>Färglägg område</value>
+  </data>
+  <data name="ActionAddBrick" xml:space="preserve">
+    <value>Lägg till Kloss "&amp;"</value>
+  </data>
+  <data name="ActionAddLayerArea" xml:space="preserve">
+    <value>Lägg till områdeslager</value>
+  </data>
+  <data name="ActionAddLayerBrick" xml:space="preserve">
+    <value>Lägg till klosslager</value>
+  </data>
+  <data name="ActionAddLayerGrid" xml:space="preserve">
+    <value>Lägg till rutnätslager</value>
+  </data>
+  <data name="ActionAddLayerText" xml:space="preserve">
+    <value>Lägg till textlager</value>
+  </data>
+  <data name="ActionAddText" xml:space="preserve">
+    <value>Lägg till ny text</value>
+  </data>
+  <data name="ActionBringBrickToFront" xml:space="preserve">
+    <value>Placera markerade bitar längst fram</value>
+  </data>
+  <data name="ActionBringTextToFront" xml:space="preserve">
+    <value>Placera markerad text längst fram</value>
+  </data>
+  <data name="ActionChangeBackgroundColor" xml:space="preserve">
+    <value>Ändra bakgrundsfärg</value>
+  </data>
+  <data name="ActionChangeGeneralInfo" xml:space="preserve">
+    <value>Ändra allmän information på layout</value>
+  </data>
+  <data name="ActionChangeMapAppearance" xml:space="preserve">
+    <value>Ändra utseende på layout</value>
+  </data>
+  <data name="ActionDeleteArea" xml:space="preserve">
+    <value>Ta bort område</value>
+  </data>
+  <data name="ActionDeleteBrick" xml:space="preserve">
+    <value>Ta bort Kloss "&amp;"</value>
+  </data>
+  <data name="ActionDeleteSeveralBricks" xml:space="preserve">
+    <value>Ta bort flera bitar</value>
+  </data>
+  <data name="ActionDeleteSeveralTexts" xml:space="preserve">
+    <value>Ta bort flera texter</value>
+  </data>
+  <data name="ActionDeleteText" xml:space="preserve">
+    <value>Ta bort texten "&amp;"</value>
+  </data>
+  <data name="ActionDuplicateBrick" xml:space="preserve">
+    <value>Kopiera Kloss "&amp;"</value>
+  </data>
+  <data name="ActionDuplicateSeveralBricks" xml:space="preserve">
+    <value>Kopiera flera bitar</value>
+  </data>
+  <data name="ActionDuplicateSeveralTexts" xml:space="preserve">
+    <value>Kopiera flera texter</value>
+  </data>
+  <data name="ActionDuplicateText" xml:space="preserve">
+    <value>Kopiera texten "&amp;"</value>
+  </data>
+  <data name="ActionEditText" xml:space="preserve">
+    <value>Redigera texten "&amp;"</value>
+  </data>
+  <data name="ActionGroupItems" xml:space="preserve">
+    <value>Gruppera objekt</value>
+  </data>
+  <data name="ActionHideLayer" xml:space="preserve">
+    <value>Dölj lagret "&amp;"</value>
+  </data>
+  <data name="ActionMoveArea" xml:space="preserve">
+    <value>Flytta områden</value>
+  </data>
+  <data name="ActionMoveBrick" xml:space="preserve">
+    <value>Flytta biten "&amp;"</value>
+  </data>
+  <data name="ActionMoveGridOrigin" xml:space="preserve">
+    <value>Flytta utgångspunkt för rutnät</value>
+  </data>
+  <data name="ActionMoveLayerDown" xml:space="preserve">
+    <value>Flytta lagret "&amp;" nedåt</value>
+  </data>
+  <data name="ActionMoveLayerUp" xml:space="preserve">
+    <value>Flytta lagret "&amp;" uppåt</value>
+  </data>
+  <data name="ActionMoveSeveralBricks" xml:space="preserve">
+    <value>Flytta flera bitar</value>
+  </data>
+  <data name="ActionMoveSeveralTexts" xml:space="preserve">
+    <value>Flytta flera texter</value>
+  </data>
+  <data name="ActionMoveText" xml:space="preserve">
+    <value>Flytta texten "&amp;"</value>
+  </data>
+  <data name="ActionRemoveLayer" xml:space="preserve">
+    <value>Ta bort lagret "&amp;"</value>
+  </data>
+  <data name="ActionReplaceBrick" xml:space="preserve">
+    <value>Ersätt biten "&amp;"</value>
+  </data>
+  <data name="ActionRotateBrick" xml:space="preserve">
+    <value>Rotera biten "&amp;"</value>
+  </data>
+  <data name="ActionRotateSeveralBricks" xml:space="preserve">
+    <value>Rotera flera bitar</value>
+  </data>
+  <data name="ActionRotateSeveralTexts" xml:space="preserve">
+    <value>Rotera flera texter</value>
+  </data>
+  <data name="ActionRotateText" xml:space="preserve">
+    <value>Rotera texten "&amp;"</value>
+  </data>
+  <data name="ActionSelectLayer" xml:space="preserve">
+    <value>Markera lager "&amp;"</value>
+  </data>
+  <data name="ActionSendBrickToBack" xml:space="preserve">
+    <value>Placera markerade bitar längst bak</value>
+  </data>
+  <data name="ActionSendTextToBack" xml:space="preserve">
+    <value>Placera markerad text längst bak</value>
+  </data>
+  <data name="ActionShowLayer" xml:space="preserve">
+    <value>Visa lagret "&amp;"</value>
+  </data>
+  <data name="ActionUngroupItems" xml:space="preserve">
+    <value>Lös upp grupp</value>
+  </data>
+  <data name="ChangeLayerOption" xml:space="preserve">
+    <value>Ändra inställningar för "&amp;"</value>
+  </data>
+  <data name="ColorSchemeBluePrint" xml:space="preserve">
+    <value>Ritning</value>
+  </data>
+  <data name="ColorSchemeClassic" xml:space="preserve">
+    <value>Klassisk (Utskriftsvänlig)</value>
+  </data>
+  <data name="ColorSchemeCustom" xml:space="preserve">
+    <value>Egendefinierad</value>
+  </data>
+  <data name="ColorSchemeParchment" xml:space="preserve">
+    <value>Pergament</value>
+  </data>
+  <data name="DefaultAuthor" xml:space="preserve">
+    <value>Okänd upphovsman</value>
+  </data>
+  <data name="DefaultLayerName" xml:space="preserve">
+    <value>Lager</value>
+  </data>
+  <data name="DefaultLUG" xml:space="preserve">
+    <value>Okänd LUG</value>
+  </data>
+  <data name="DefaultSaveFileName" xml:space="preserve">
+    <value>Namnlös.bbm</value>
+  </data>
+  <data name="DefaultShow" xml:space="preserve">
+    <value>Okänt event</value>
+  </data>
+  <data name="ErrorMsgApplyNewSettingsToAllLayers" xml:space="preserve">
+    <value>Du har ändrat standardinställningar. De nya inställningarna används när du skapar nya lager. Vill du även använda inställningarna på aktuell layout?</value>
+  </data>
+  <data name="ErrorMsgCanNotLoadImage" xml:space="preserve">
+    <value>BlueBrick har stött på problem med att ladda bilder från databasen. Dessa bilder kommer ignoreras. Problemet kan uppstå om en bild är korrupt eller för stor. Ta bort bild/erna från din databas för att slippa den här varningen. Bilderna är:</value>
+  </data>
+  <data name="ErrorMsgCanNotLoadPartXML" xml:space="preserve">
+    <value>Bluebrick har stött på problem med att ladda XML-filer från databasen. Dessa filer kommer ignoreras. Problemet kan uppstå om en fil innehåller syntaxfel. Rätta felen eller ta bort filerna från din databas för att slippa den här varningen. Filerna är:</value>
+  </data>
+  <data name="ErrorMsgCannotOpenMap" xml:space="preserve">
+    <value>Kan inte öppna layouten &amp;.</value>
+  </data>
+  <data name="ErrorMsgCanNotPaste" xml:space="preserve">
+    <value>Kan inte klistra in objekt av typen &amp; i aktuellt lager av typen &amp;&amp;.</value>
+  </data>
+  <data name="ErrorMsgCannotSaveMap" xml:space="preserve">
+    <value>Kan inte spara layouten &amp;.</value>
+  </data>
+  <data name="ErrorMsgConfirmRestoreDefault" xml:space="preserve">
+    <value>Är du helt säker på att du vill återställa standardinställningar?</value>
+  </data>
+  <data name="ErrorMsgCrash" xml:space="preserve">
+    <value>BlueBrick Copyright © Alban NANTY. Detta program är freeware under villkoren för GPLv3 och laddas ner HELT UTAN GARANTIER. Det har uppstått ett kritiskt fel och programmet kommer att stängas. Var vänlig och rapportera felet till banban@lswproject.com. Felmeddelande:</value>
+  </data>
+  <data name="ErrorMsgLanguageHasChanged" xml:space="preserve">
+    <value>Du har ändrat språk men ändringen träder inte i kraft förrän du startat om programmet. Vill du starta om nu?</value>
+  </data>
+  <data name="ErrorMsgLayerTypeArea" xml:space="preserve">
+    <value>Område</value>
+  </data>
+  <data name="ErrorMsgLayerTypeBrick" xml:space="preserve">
+    <value>Bit</value>
+  </data>
+  <data name="ErrorMsgLayerTypeGrid" xml:space="preserve">
+    <value>Rutnät</value>
+  </data>
+  <data name="ErrorMsgLayerTypeText" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="ErrorMsgMapWasModified" xml:space="preserve">
+    <value>Aktuell layout är inte sparad. Vill du spara dina ändringar?</value>
+  </data>
+  <data name="ErrorMsgMissingColorInfoFile" xml:space="preserve">
+    <value>Kan inte öppna filen &amp;. Utan filen kommer du inte kunna se färgen och benämningen på bitarna i kloss-listan. Var vänlig kontrollera att filen finns på rätt plats eller ominstallera BlueBrick för att lösa problemet.</value>
+  </data>
+  <data name="ErrorMsgMissingConnectionTypeInfoFile" xml:space="preserve">
+    <value>Kan inte öppna filen &amp;. Utan denna fil kommer du inte kunna koppla ihop delarna. Var vänlig kontrollera att filen finns på rätt plats eller ominstallera BlueBrick för att lösa problemet.</value>
+  </data>
+  <data name="ErrorMsgMissingParts" xml:space="preserve">
+    <value>Vissa delar laddades inte in korrekt då de inte finns i kloss-biblioteket. Vissa standardbilder har tillfälligt lagts till för att ersätta ursprungsbilderna. Kontakta layoutens skapare &amp; för att få tillgång till dem.</value>
+  </data>
+  <data name="ErrorMsgMissingTDRemap" xml:space="preserve">
+    <value>Vissa Track Designer-bitars ID kunde inte hittas i din BlueBrick-databas. BlueBrick kunde inte ladda dessa delar och ignorerar dem. Försäkra dig om att du har motsvarande bit i din BlueBrick-databas med korrekt Track Designer-ID i XML-filen och försök öppna Track Designer-filen. ID:n som fattas:</value>
+  </data>
+  <data name="ErrorMsgNoHelpFile" xml:space="preserve">
+    <value>BlueBrick kan inte hitta hjälpfilen "BlueBrick.chm" som ska finnas i installationsmappen. Att installera om BlueBrick kan lösa problemet.</value>
+  </data>
+  <data name="ErrorMsgNotSavingInBBM" xml:space="preserve">
+    <value>Formatet du valt kan inte spara all information i din layout. Rutnät, område och text kommer att gå förlorat. Bara bbm-formatet kan spara all information. Vill du fortsätta ändå?</value>
+  </data>
+  <data name="ErrorMsgOldTDFile" xml:space="preserve">
+    <value>Tyvärr har Track Designer-filen du försöker ladda ett för gammalt filformat. Öppna filen i Track Designer och spara på nytt. Sedan ska det gå att öppna med BlueBrick.</value>
+  </data>
+  <data name="ErrorMsgProgramObsolete" xml:space="preserve">
+    <value>Kan inte ladda filen. Din version av BlueBrick är föråldrad eller så är det inte en giltig BlueBrick-fil. Ladda hem och installera senaste versionen av BlueBrick.</value>
+  </data>
+  <data name="ErrorMsgReadyToReloadPartLib" xml:space="preserve">
+    <value>Databasen har inte laddats in och du kan nu redigera databasens filer. Klicka OK när du vill ladda in databasen på nytt.</value>
+  </data>
+  <data name="ErrorMsgTitleError" xml:space="preserve">
+    <value>Fel</value>
+  </data>
+  <data name="ErrorMsgTitleWarning" xml:space="preserve">
+    <value>Varning</value>
+  </data>
+  <data name="HideDetails" xml:space="preserve">
+    <value>Dölj detaljer</value>
+  </data>
+  <data name="PartLibMenuItemDisplayTooltips" xml:space="preserve">
+    <value>Hjälpruta</value>
+  </data>
+  <data name="PartLibMenuItemLargeIcons" xml:space="preserve">
+    <value>Stora ikoner</value>
+  </data>
+  <data name="PartLibMenuItemRespectProportion" xml:space="preserve">
+    <value>Behåll proportioner</value>
+  </data>
+  <data name="ShowDetails" xml:space="preserve">
+    <value>Visa detaljer</value>
+  </data>
+  <data name="TextEnterText" xml:space="preserve">
+    <value>Skriv in din text här...</value>
+  </data>
+  <data name="TextNA" xml:space="preserve">
+    <value>Inte tillgängligt</value>
+  </data>
+  <data name="TextUnknown" xml:space="preserve">
+    <value>Okänt</value>
+  </data>
+  <data name="ActionFlexMove" xml:space="preserve">
+    <value>Flytta flexibla bitar</value>
+  </data>
+  <data name="LayerTextOptionTitle" xml:space="preserve">
+    <value>Alternativ för textlager</value>
+  </data>
+  <data name="UnitFeet" xml:space="preserve">
+    <value>ft</value>
+  </data>
+  <data name="UnitLDU" xml:space="preserve">
+    <value>LDU</value>
+  </data>
+  <data name="UnitMeter" xml:space="preserve">
+    <value>m</value>
+  </data>
+  <data name="UnitModule" xml:space="preserve">
+    <value>moduler</value>
+  </data>
+  <data name="UnitStud" xml:space="preserve">
+    <value>knoppar</value>
+  </data>
+  <data name="ErrorMsgLayerTypeUnknown" xml:space="preserve">
+    <value>Okänt</value>
+  </data>
+</root>
