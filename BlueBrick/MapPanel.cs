@@ -567,7 +567,10 @@ namespace BlueBrick
 						{
 							LayerBrick.Brick brickUnderMouse = brickLayer.getBrickUnderMouse(mouseCoordInStud);
 							if (brickUnderMouse != null)
+                            {
 								statusBarMessage += BrickLibrary.Instance.getFormatedBrickInfo(brickUnderMouse.PartNumber, true, true, true);
+                                statusBarMessage += " " + brickUnderMouse.Id;
+                            }
 						}
 						else
 						{

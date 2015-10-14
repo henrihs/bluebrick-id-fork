@@ -471,14 +471,16 @@ namespace BlueBrick.MapData
 				get { return mAltitude; }
 				set { mAltitude = value; }
 			}
-			#endregion
 
-			#region constructor/copy
-			/// <summary>
-			/// this parameter less constructor is requested for the serialization, but should not
-			/// be used by the program
-			/// </summary>
-			public Brick()
+            public string Id { get; set; }
+            #endregion
+
+            #region constructor/copy
+            /// <summary>
+            /// this parameter less constructor is requested for the serialization, but should not
+            /// be used by the program
+            /// </summary>
+            public Brick()
 			{
 			}
 
@@ -549,6 +551,11 @@ namespace BlueBrick.MapData
 						mConnectionPoints.Add(new ConnectionPoint(this, i));
 					updateConnectionPosition();
 				}
+
+                if (Id == null)
+                {
+                    Id = this.GetHashCode().ToString();
+                }
 			}
 			#endregion
 
@@ -560,6 +567,7 @@ namespace BlueBrick.MapData
 				if (Map.DataVersionOfTheFileLoaded >= 7)
 				{
 					int brickId = int.Parse(reader.GetAttribute(0));
+                    Id = brickId.ToString();
 					Map.sHashtableForRulerAttachementRebuilding.Add(brickId, this);
 				}
 				// read the base class
@@ -678,10 +686,10 @@ namespace BlueBrick.MapData
 				reader.ReadEndElement();
 			}
 
-			public override void WriteXml(System.Xml.XmlWriter writer)
+            public override void WriteXml(System.Xml.XmlWriter writer)
 			{
-				writer.WriteStartElement("Brick");
-				writer.WriteAttributeString("id", this.GetHashCode().ToString());
+                writer.WriteStartElement("Brick");
+    			writer.WriteAttributeString("id", string.Format("{0}", Id != "" ? Id : this.GetHashCode().ToString()));
 				base.WriteXml(writer);
 				writer.WriteElementString("PartNumber", mPartNumber);
 				writer.WriteElementString("Orientation", mOrientation.ToString(System.Globalization.CultureInfo.InvariantCulture));
