@@ -217,10 +217,10 @@ namespace BlueBrick.MapData
 
 				public void WriteXml(System.Xml.XmlWriter writer)
 				{
-					writer.WriteAttributeString("id", GetHashCode().ToString());
+					writer.WriteAttributeString("id", "c" + GetHashCode().ToString());
 					writer.WriteStartElement("LinkedTo");
 					if (mConnectionLink != null)
-						writer.WriteString(mConnectionLink.GetHashCode().ToString());
+						writer.WriteString("c" + mConnectionLink.GetHashCode().ToString());
 					writer.WriteEndElement();
 				}
 
