@@ -80,7 +80,8 @@ namespace BlueBrick
 		private ToolStripSeparator selectToolStripSeparator;
 		private ToolStripMenuItem deselectAllToolStripMenuItem;
 		private ToolStripMenuItem selectPathToolStripMenuItem;
-		private ToolStripMenuItem selectAllToolStripMenuItem;
+        private ToolStripMenuItem copyIdToolStripMenuItem;
+        private ToolStripMenuItem selectAllToolStripMenuItem;
 		private ToolStripSeparator groupToolStripSeparator;
 		private ToolStripMenuItem groupToolStripMenuItem;
 		private ToolStripMenuItem ungroupToolStripMenuItem;
@@ -151,6 +152,7 @@ namespace BlueBrick
             this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deselectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectPathToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyIdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupToolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.groupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ungroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -171,6 +173,7 @@ namespace BlueBrick
             this.selectAllToolStripMenuItem,
             this.deselectAllToolStripMenuItem,
             this.selectPathToolStripMenuItem,
+            this.copyIdToolStripMenuItem,
             this.groupToolStripSeparator,
             this.groupToolStripMenuItem,
             this.ungroupToolStripMenuItem,
@@ -215,6 +218,12 @@ namespace BlueBrick
             resources.ApplyResources(this.selectPathToolStripMenuItem, "selectPathToolStripMenuItem");
             this.selectPathToolStripMenuItem.Name = "selectPathToolStripMenuItem";
             this.selectPathToolStripMenuItem.Click += new System.EventHandler(this.selectPathToolStripMenuItem_Click);
+            //
+            // copyIdToolStripMenuItem
+            //
+            resources.ApplyResources(this.copyIdToolStripMenuItem, "copyIdToolStripMenuItem");
+            this.copyIdToolStripMenuItem.Name = "copyIdToolStripMenuItem";
+            this.copyIdToolStripMenuItem.Click += new System.EventHandler(this.copyIdToolStripMenuItem_Click);
             // 
             // groupToolStripSeparator
             // 
@@ -841,7 +850,9 @@ namespace BlueBrick
 				this.deselectAllToolStripMenuItem.Enabled = enableItemRelatedToSelection;
 				this.selectPathToolStripMenuItem.Visible = (selectedLayer is LayerBrick);
 				this.selectPathToolStripMenuItem.Enabled = (isThereAVisibleSelectedLayer && (selectedLayer.SelectedObjects.Count == 2));
-				if (isThereAVisibleSelectedLayer)
+                this.copyIdToolStripMenuItem.Visible = (selectedLayer is LayerBrick);
+                this.copyIdToolStripMenuItem.Enabled = (selectedLayer is LayerBrick);
+                if (isThereAVisibleSelectedLayer)
 				{
 					this.groupToolStripMenuItem.Enabled = Actions.Items.GroupItems.findItemsToGroup(selectedLayer.SelectedObjects).Count > 1;
 					this.ungroupToolStripMenuItem.Enabled = Actions.Items.UngroupItems.findItemsToUngroup(selectedLayer.SelectedObjects).Count > 0;
@@ -906,7 +917,12 @@ namespace BlueBrick
 			MainForm.Instance.selectPathToolStripMenuItem_Click(sender, e);
 		}
 
-		private void groupToolStripMenuItem_Click(object sender, EventArgs e)
+        private void copyIdToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MainForm.Instance.copyIdToolStripMenuItem_Click(sender, e);
+        }
+
+        private void groupToolStripMenuItem_Click(object sender, EventArgs e)
 		{
             MainForm.Instance.groupToolStripMenuItem_Click(sender, e);
 		}

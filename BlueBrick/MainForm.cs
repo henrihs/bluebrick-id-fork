@@ -1770,6 +1770,16 @@ namespace BlueBrick
 			}
 		}
 
+        public void copyIdToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Layer selectedLayer = Map.Instance.SelectedLayer;
+            if ((selectedLayer != null) && (selectedLayer is LayerBrick) && (selectedLayer.SelectedObjects.Count == 1))
+            {
+                var brickId = ((LayerBrick.Brick)selectedLayer.SelectedObjects[0]).Id;
+                Clipboard.SetText(brickId);
+            }
+        }
+
         public void groupToolStripMenuItem_Click(object sender, EventArgs e)
         {
 			Layer selectedLayer = Map.Instance.SelectedLayer;
