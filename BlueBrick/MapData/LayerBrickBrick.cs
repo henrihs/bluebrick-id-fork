@@ -203,9 +203,11 @@ namespace BlueBrick.MapData
 					}
 					else
 					{
-						int hashCodeOfTheLink = reader.ReadElementContentAsInt();
-						// look in the hastable if this connexion alread exists, else create it
-						mConnectionLink = ConnectionPoint.sHashtableForLinkRebuilding[hashCodeOfTheLink] as ConnectionPoint;
+                        var linkString = reader.ReadElementContentAsString();
+                        // remove character 'c' preceding the link id
+                        int hashCodeOfTheLink = int.Parse(linkString.Substring(1));
+                        // look in the hastable if this connexion alread exists, else create it
+                        mConnectionLink = ConnectionPoint.sHashtableForLinkRebuilding[hashCodeOfTheLink] as ConnectionPoint;
 						if (mConnectionLink == null)
 						{
 							// instanciate a ConnectionPoint, and add it in the hash table
@@ -623,7 +625,8 @@ namespace BlueBrick.MapData
 
 						// read the id (hashcode key) of the connexion
 						reader.ReadAttributeValue();
-						int hashCode = int.Parse(reader.GetAttribute(0));
+                        String id = reader.GetAttribute(0);
+                        int hashCode = int.Parse(id.Substring(1));
 
 						// look in the hastable if this connexion alread exists, else create it
 						ConnectionPoint connexion = ConnectionPoint.sHashtableForLinkRebuilding[hashCode] as ConnectionPoint;
